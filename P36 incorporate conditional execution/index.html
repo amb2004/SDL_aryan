@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Size Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>File Size Calculator</h2>
+        <form id="fileSizeForm">
+            <div class="form-group">
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <button type="submit">Calculate File Size</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
