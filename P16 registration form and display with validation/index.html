@@ -1,0 +1,38 @@
+<!-- P15 ka code hai vo hee edit karle -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <span id="firstNameError" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <span id="lastNameError" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="organization">Organization:</label>
+            <input type="text" id="organization" name="organization">
+        </div>
+        <div class="form-group">
+            <label for="hobbies">Hobbies:</label>
+            <textarea id="hobbies" name="hobbies"></textarea>
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
